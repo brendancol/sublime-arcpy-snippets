@@ -13,7 +13,8 @@ sublime-arcpy-snippets
 
 
 
-##Keyboard Triggers| Snippet        | Type           | Trigger  |
+##Keyboard Triggers
+| Snippet        | Type           | Trigger  |
 | ------------- |:-------------:| -----:|
 |arcpy-create-feature-class |arcpy |GP Create Feature Class | 
 |arcpy-search-cursor |arcpy |searchCursor | 

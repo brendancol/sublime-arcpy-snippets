@@ -24,7 +24,7 @@ sublime-arcpy-snippets
 \n
 '''
 
-markdown += '##Keyboard Triggers'
+markdown += '##Keyboard Triggers\n'
 markdown += '| Snippet        | Type           | Trigger  |\n'
 markdown += '| ------------- |:-------------:| -----:|\n'
 
