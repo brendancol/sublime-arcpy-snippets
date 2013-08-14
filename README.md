@@ -16,7 +16,7 @@ sublime-arcpy-snippets
 ###Keyboard Triggers
 | Snippet        | Trigger           | Description  | Scope| 
 | ------------- |-------------| -----| -----|
-|arcpy-create-feature-class |GP Create Feature Class |Template for create a new feature class | source.python| 
+|arcpy-create-feature-class |GP Create Feature Class |Template for create a new feature class (arcpy.CreateFeatureclass_management) | source.python| 
 |arcpy-search-cursor |searchCursor |open search cursor on feature class (arcpy.da.SearchCursor) | source.python| 
 |arcpy-update-cursor |updateCursor |open update cursor (arcpy.da.UpdateCursor) | source.python| 
-|toolbox-tool |toolpyt |None | source.python| 
+|toolbox-tool |toolpyt |Tool template for Python Toolbox (.pyt) | source.python| 
