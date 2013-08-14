@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+# create feature class
+geometry_type = 'POLYGON'
+spatial_reference = arcpy.SpatialReference()
+spatial_reference.factoryCode=4326 #3857
+spatial_reference.create()
+
+output_path = ''
+out_workspace, out_name  = os.path.split(output_path)
+
+arcpy.CreateFeatureclass_management(out_workspace, out_name, geometry_type, spatial_reference=spatial_reference)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>GP Create Feature Class</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
