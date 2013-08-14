@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+with arcpy.da.SearchCursor(featureClass, field_names=[]) as cursor:
+	for r in cursor:
+		print r
+]]></content>
+	
+	<tabTrigger>searchCursor</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
