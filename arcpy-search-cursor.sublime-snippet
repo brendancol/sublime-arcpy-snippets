@@ -7,4 +7,5 @@ with arcpy.da.SearchCursor(featureClass, field_names=[]) as cursor:
 	
 	<tabTrigger>searchCursor</tabTrigger>
 	<scope>source.python</scope>
+	<description>open search cursor on feature class (arcpy.da.SearchCursor)</description>
 </snippet>

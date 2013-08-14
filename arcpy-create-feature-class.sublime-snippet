@@ -15,4 +15,5 @@ arcpy.CreateFeatureclass_management(out_workspace, out_name, geometry_type, spat
 	<tabTrigger>GP Create Feature Class</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
+	<description>Template for create a new feature class</description>
 </snippet>
