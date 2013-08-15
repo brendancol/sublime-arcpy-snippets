@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+import unittest
+
+
+class ClassTestName(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def test_method(self):
+        self.assertTrue(True)
+
+
+
+if __name__ == '__main__':
+    unittest.main()
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>testCase</tabTrigger>
+	<description>Adds python unittest test case</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

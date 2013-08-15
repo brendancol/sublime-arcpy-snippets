@@ -1,48 +1,48 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 class Tool(object):
-	def __init__(self):
-		"""Define the tool (tool name is the name of the class)."""
-		self.label = "Tool"
-		self.description = ""
-		self.canRunInBackground = False
+    def __init__(self):
+        """Define the tool (tool name is the name of the class)."""
+        self.label = "Tool"
+        self.description = ""
+        self.canRunInBackground = False
 
-	def getParameterInfo(self):
-		"""Define parameter definitions"""
-		string_param = arcpy.Parameter(displayName="String Param", name="string_param", datatype="String", parameterType="Required", direction="Input")
-		result_param = arcpy.Parameter(displayName="result", name="result", datatype="String", parameterType="Derived", direction="Output")
-		errors_param = arcpy.Parameter(displayName="errors", name="errors", datatype="String", parameterType="Derived", direction="Output")
+    def getParameterInfo(self):
+        """Define parameter definitions"""
+        string_param = arcpy.Parameter(displayName="String Param", name="string_param", datatype="String", parameterType="Required", direction="Input")
+        result_param = arcpy.Parameter(displayName="result", name="result", datatype="String", parameterType="Derived", direction="Output")
+        errors_param = arcpy.Parameter(displayName="errors", name="errors", datatype="String", parameterType="Derived", direction="Output")
 
-		params = [string_param, result_param, errors_param]
-		return params
+        params = [string_param, result_param, errors_param]
+        return params
 
-	def isLicensed(self):
-		"""Set whether tool is licensed to execute."""
-		return True
+    def isLicensed(self):
+        """Set whether tool is licensed to execute."""
+        return True
 
-	def updateParameters(self, parameters):
-		"""Modify the values and properties of parameters before internal
-		validation is performed.  This method is called whenever a parameter
-		has been changed."""
-		return
+    def updateParameters(self, parameters):
+        """Modify the values and properties of parameters before internal
+        validation is performed.  This method is called whenever a parameter
+        has been changed."""
+        return
 
-	def updateMessages(self, parameters):
-		"""Modify the messages created by internal validation for each tool
-		parameter.  This method is called after internal validation."""
-		return
+    def updateMessages(self, parameters):
+        """Modify the messages created by internal validation for each tool
+        parameter.  This method is called after internal validation."""
+        return
 
-	def execute(self, parameters, messages):
-		"""The source code of the tool."""
-		string_input = parameters[0].valueAsText
-		results = run_logic(string_input)
+    def execute(self, parameters, messages):
+        """The source code of the tool."""
+        string_input = parameters[0].valueAsText
+        results = run_logic(string_input)
 
-		parameters[1].value = results
-		parameters[2].value = json.dumps(errors)
-		return
+        parameters[1].value = results
+        parameters[2].value = json.dumps(errors)
+        return
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>toolpyt</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.python</scope>
-	<description>Tool template for Python Toolbox (.pyt)</description>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>toolpyt</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <description>Tool template for Python Toolbox (.pyt)</description>
 </snippet>
