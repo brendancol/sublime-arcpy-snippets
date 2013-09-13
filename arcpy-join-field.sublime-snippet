@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+# Set the local parameters
+in_feature_class = "zion_park"
+in_join_field = "zonecode"
+join_table = "zion_zoning"
+join_field = "zonecode"
+fields = ["land_use", "land_cover"]
+
+arcpy.JoinField_management(in_feature_class, in_join_field, join_table, join_field, fields)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>GP Join Field</tabTrigger>
+	<description>Joins the contents of a table to another table based on a common attribute field.  This is a permanent join.</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

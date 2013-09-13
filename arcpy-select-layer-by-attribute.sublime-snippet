@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+feature_layer = 'new_feature_layer'
+arcpy.MakeFeatureLayer_management(source_feature_class, feature_layer)
+arcpy.SelectLayerByAttribute_management(feature_layer, "NEW_SELECTION", where)
+#arcpy.CopyFeatures_management(feature_layer, output_feature_class)
+arcpy.Delete_management(feature_layer)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>GP Select Layer By Attribute</tabTrigger>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+
