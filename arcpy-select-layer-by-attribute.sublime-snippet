@@ -8,7 +8,7 @@ arcpy.Delete_management(feature_layer)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>GP Select Layer By Attribute</tabTrigger>
-
+	<description>Adds, updates, or removes a selection on a layer or table view based on an attribute query.</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
 </snippet>

@@ -8,6 +8,7 @@ arcpy.Delete_management(feature_layer)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>GP Make Feature Layer</tabTrigger>
+	<description>Creates a feature layer from an input feature class or layer file. The layer that is created by the tool is temporary and will not persist after the session ends unless the layer is saved to disk or the map document is saved.</description>
 
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.python</scope>
